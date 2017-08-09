@@ -1,12 +1,11 @@
 CC := gcc
 
-APP := cm_application
 INCDIR := ./inc
 SRCDIR := ./src
 OBJDIR := ./obj
 LIBDIR := ./bin
 BINDIR := ./bin
-TARGET := cm_application
+TARGET := test
 
 CFLAGS += #-L. 
 CFLAGS += #-march=armv7-a
@@ -38,12 +37,12 @@ LIBS := \
 	#-lpthread
 
 LIBDIRS :=  \
-	#-L./mcm_api/lib
+	-L./lib/lib
 
 INCPATHS := \
 	-I. \
 	-I$(INCDIR) \
-	#-I./mcm_api/inc
+	-I./lib/inc
 
 SOURCES := \
 	main.c \
