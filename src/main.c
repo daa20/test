@@ -37,6 +37,8 @@ main(int argc, char *argv[])
     printf("%f / %f = %f\n", a, b, div(a, b));
 
     pintf("this is a test!\n");    
+   
+    pintf(" test helloworld!\n");    
     
     return 0;
 }
